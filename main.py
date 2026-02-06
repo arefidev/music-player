@@ -3,7 +3,6 @@ import os
 os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
 import pygame
 
-
 def main():
     try:
         pygame.mixer.init()
@@ -16,7 +15,6 @@ def main():
         print(f"Folder {folder} not found!")
 
     mp3_files = [file for file in os.listdir(folder) if file.endswith(".mp3")]
-    
     while True:
         print("***** MP3 Player *****")
         print("My song list: ")
